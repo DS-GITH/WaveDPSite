@@ -20,9 +20,11 @@
 
   </head>
 
-  <body>
+  <body> 
 
+  <div class="Title"> Novidades </div>
     <div class="carrossel-container">
+      
       <div class="carrossel">
         <img src="../assets/wavebanner.png" alt="Imagem 1">
         <img src="../assets/wavebanner.png" alt="Imagem 2">
@@ -39,9 +41,18 @@
         width: 100%;
         height: 400px;
         overflow: hidden;
-        margin: 20% auto 0 auto;
+        margin: 0;
       }
-
+      
+      .Title{
+        position: relative;
+        font-size: 50px;
+        color: black;
+        text-align: center;
+        margin: 20% auto 20px auto;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+      }
       .carrossel {
         display: flex;
         transition: transform 0.5s ease-in-out;
@@ -58,7 +69,7 @@
 
       .carrossel-btn {
         position: absolute;
-        top: 70%;
+        top: 55%;
         transform: translateY(-50%);
         font-size: 30px;
         color: white;
