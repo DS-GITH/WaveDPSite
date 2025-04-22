@@ -1,4 +1,40 @@
-   body {
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Wave</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.php">
+          <img src="../assets/Wave.png" alt="Logo Wave">
+        </a>
+      </div>
+      <div class="search-bar">
+        <input class="search-input" type="text" placeholder="Pesquisar..." />
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </div>
+      <nav class="icons">
+        <div class="icon">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-regular fa-circle-user"></i>
+        </div>
+      </nav>
+    </header>
+
+    <style>
+      body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -76,3 +112,6 @@
       .icons i:hover {
         color: #ccc;
       }
+    </style>
+  </body>
+</html>
