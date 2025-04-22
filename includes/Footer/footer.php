@@ -39,10 +39,14 @@ $currentYear = date("Y");
             width: 100%;
             font-family: 'Arial', sans-serif;
             box-sizing: border-box;
+            box-shadow: -1px -4px 36px -7px rgba(0,0,0,0.57);
+            -webkit-box-shadow: -1px -4px 36px -7px rgba(0,0,0,0.57);
+            -moz-box-shadow: -1px -4px 36px -7px rgba(0,0,0,0.57);
         }
 
         .footer-content {
             display: flex;
+            position: relative;
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;

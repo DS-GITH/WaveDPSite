@@ -10,6 +10,8 @@
 
     <?php include_once '../includes/Header/header.php'; ?>
 
+    <?php include_once '../includes/NewsBanner/banner.php'; ?>
+
     <div class="container">
         <h1>Welcome to the Home Page</h1>
         <p>This is the main content of the page.</p>
