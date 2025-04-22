@@ -34,7 +34,7 @@ $currentYear = date("Y");
             color: white;
             padding: 30px 0;
             text-align: center;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
             font-family: 'Arial', sans-serif;

@@ -41,6 +41,10 @@
       }
 
       header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
         background-color: #000000;
         color: white;
         padding: 10px 20px;
