@@ -1,44 +1,10 @@
-<?php
-$produtos = [
-    [
-        'normal' => '../assets/HeartBegeCostas.png',   
-        'hover' => '../assets/HeartBegeFrente.png',    
-        'nome' => 'Blusa Heart Bege',                  
-                                 
-    ],
+<?php 
 
-    [
-        'normal' => '../assets/WavePlanetBack.png',
-        'hover' => '../assets/WavePlanetFront.png',
-        'nome' => 'Wave Planet',
-        
-    ],
+include_once '../data/ColecaoAtual.php';
+include_once '../data/Destaques.php';
+include_once '../data/Recomendadas.php';
 
-    [
-        'normal' => '../assets/WaveGirlBack.png',
-        'hover' => '../assets/WaveGirlFront.png',
-        'nome' => 'Wave Girl',
-       
-    ],
-
-    [
-        'normal' => '../assets/WaveShapeBack.png',
-        'hover' => '../assets/WaveShapeFront.png',
-        'nome' => 'Wave Shape'
-       
-    ],
-
-    [
-        'normal' => '../assets/WaveSkateBack.png',
-        'hover' => '../assets/WaveSkateFront.png',
-        'nome' => 'Wave Skate',
-       
-    ],
-
-
-];
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,17 +28,17 @@ $produtos = [
 
     <section class="Products">
 
-        <h2 class="title"> Destaques </h2>
+        <h2 class="title"> Coleção Atual </h2>
 
         <hr class="divisor">
 
     <div class="prodSec">
 
-    <?php foreach ($produtos as $produto): ?>
+    <?php foreach ($ColecaoAtual as $peca): ?>
         <div class="prodBox">
             <div class="imgContainer">
-                <img src="<?php echo $produto['hover']; ?>" class="Hover">
-                <img src="<?php echo $produto['normal']; ?>" class="Normal">
+                <img src="<?php echo $peca['hover']; ?>" class="Hover">
+                <img src="<?php echo $peca['normal']; ?>" class="Normal">
                 
             </div>
             <div class="bttnBox">
@@ -94,11 +60,11 @@ $produtos = [
 
     <div class="prodSec">
 
-    <?php foreach ($produtos as $produto): ?>
+    <?php foreach ($Destaques as $destacada): ?>
         <div class="prodBox">
             <div class="imgContainer">
-                <img src="<?php echo $produto['hover']; ?>" class="Hover">
-                <img src="<?php echo $produto['normal']; ?>" class="Normal">
+                <img src="<?php echo $destacada['hover']; ?>" class="Hover">
+                <img src="<?php echo $destacada['normal']; ?>" class="Normal">
                 
             </div>
             <div class="bttnBox">
@@ -114,43 +80,17 @@ $produtos = [
 
     <section class="Products">
 
-        <h2 class="title"> Destaques </h2>
+        <h2 class="title"> Recomendados </h2>
 
         <hr class="divisor">
 
     <div class="prodSec">
 
-    <?php foreach ($produtos as $produto): ?>
+    <?php foreach ($Recomendadas as $recomendacao): ?>
         <div class="prodBox">
             <div class="imgContainer">
-                <img src="<?php echo $produto['hover']; ?>" class="Hover">
-                <img src="<?php echo $produto['normal']; ?>" class="Normal">
-                
-            </div>
-            <div class="bttnBox">
-                <a href="#" class="Bttn">Comprar</a>
-            </div>
-            
-        </div>
-    <?php endforeach; ?>
-
-</div>
-
-    </section>
-
-    <section class="Products">
-
-        <h2 class="title"> Destaques </h2>
-
-        <hr class="divisor">
-
-    <div class="prodSec">
-
-    <?php foreach ($produtos as $produto): ?>
-        <div class="prodBox">
-            <div class="imgContainer">
-                <img src="<?php echo $produto['hover']; ?>" class="Hover">
-                <img src="<?php echo $produto['normal']; ?>" class="Normal">
+                <img src="<?php echo $recomendacao['hover']; ?>" class="Hover">
+                <img src="<?php echo $recomendacao['normal']; ?>" class="Normal">
                 
             </div>
             <div class="bttnBox">
