@@ -114,7 +114,7 @@
       }
 
       // Configuração do loop automático (opcional)
-      setInterval(nextSlide, 3000); // Muda a imagem a cada 3 segundos
+      setInterval(nextSlide, 5000); // Muda a imagem a cada 5 segundos
 
       // Eventos de clique para os botões
       prevButton.addEventListener('click', prevSlide);
