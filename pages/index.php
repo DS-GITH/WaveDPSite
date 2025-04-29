@@ -8,16 +8,16 @@ $produtos = [
     ],
 
     [
-        'normal' => '../assets/BlueShirtCostas.png',
-        'hover' => '../assets/BlueShirtFrente.png',
-        'nome' => 'Blusa Azul',
+        'normal' => '../assets/WavePlanetBack.png',
+        'hover' => '../assets/WavePlanetFront.png',
+        'nome' => 'Wave Planet',
         
     ],
 
     [
-        'normal' => '../assets/BlackShirtCostas.png',
-        'hover' => '../assets/BlackShirtFrente.png',
-        'nome' => 'Blusa Preta',
+        'normal' => '../assets/WaveGirlBack.png',
+        'hover' => '../assets/WaveGirlFront.png',
+        'nome' => 'Wave Girl',
        
     ]
 ];
@@ -44,7 +44,7 @@ $produtos = [
 
     <section class="Products">
     <div class="prodSec">
-        
+
     <?php foreach ($produtos as $produto): ?>
         <div class="prodBox">
             <div class="imgContainer">
