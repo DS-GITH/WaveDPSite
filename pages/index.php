@@ -19,7 +19,23 @@ $produtos = [
         'hover' => '../assets/WaveGirlFront.png',
         'nome' => 'Wave Girl',
        
-    ]
+    ],
+
+    [
+        'normal' => '../assets/WaveShapeBack.png',
+        'hover' => '../assets/WaveShapeFront.png',
+        'nome' => 'Wave Shape'
+       
+    ],
+
+    [
+        'normal' => '../assets/WaveSkateBack.png',
+        'hover' => '../assets/WaveSkateFront.png',
+        'nome' => 'Wave Skate',
+       
+    ],
+
+
 ];
 ?>
 
