@@ -55,10 +55,17 @@ $produtos = [
 
     <?php include_once '../includes/Header/header.php'; ?>
 
+
     <?php include_once '../includes/NewsBanner/banner.php'; ?>
 
 
+
     <section class="Products">
+
+        <h2 class="title"> Destaques </h2>
+
+        <hr class="divisor">
+
     <div class="prodSec">
 
     <?php foreach ($produtos as $produto): ?>
@@ -66,10 +73,90 @@ $produtos = [
             <div class="imgContainer">
                 <img src="<?php echo $produto['hover']; ?>" class="Hover">
                 <img src="<?php echo $produto['normal']; ?>" class="Normal">
+                
             </div>
             <div class="bttnBox">
                 <a href="#" class="Bttn">Comprar</a>
             </div>
+            
+        </div>
+    <?php endforeach; ?>
+
+</div>
+
+    </section>
+
+    <section class="Products">
+
+        <h2 class="title"> Destaques </h2>
+
+        <hr class="divisor">
+
+    <div class="prodSec">
+
+    <?php foreach ($produtos as $produto): ?>
+        <div class="prodBox">
+            <div class="imgContainer">
+                <img src="<?php echo $produto['hover']; ?>" class="Hover">
+                <img src="<?php echo $produto['normal']; ?>" class="Normal">
+                
+            </div>
+            <div class="bttnBox">
+                <a href="#" class="Bttn">Comprar</a>
+            </div>
+            
+        </div>
+    <?php endforeach; ?>
+
+</div>
+
+    </section>
+
+    <section class="Products">
+
+        <h2 class="title"> Destaques </h2>
+
+        <hr class="divisor">
+
+    <div class="prodSec">
+
+    <?php foreach ($produtos as $produto): ?>
+        <div class="prodBox">
+            <div class="imgContainer">
+                <img src="<?php echo $produto['hover']; ?>" class="Hover">
+                <img src="<?php echo $produto['normal']; ?>" class="Normal">
+                
+            </div>
+            <div class="bttnBox">
+                <a href="#" class="Bttn">Comprar</a>
+            </div>
+            
+        </div>
+    <?php endforeach; ?>
+
+</div>
+
+    </section>
+
+    <section class="Products">
+
+        <h2 class="title"> Destaques </h2>
+
+        <hr class="divisor">
+
+    <div class="prodSec">
+
+    <?php foreach ($produtos as $produto): ?>
+        <div class="prodBox">
+            <div class="imgContainer">
+                <img src="<?php echo $produto['hover']; ?>" class="Hover">
+                <img src="<?php echo $produto['normal']; ?>" class="Normal">
+                
+            </div>
+            <div class="bttnBox">
+                <a href="#" class="Bttn">Comprar</a>
+            </div>
+            
         </div>
     <?php endforeach; ?>
 

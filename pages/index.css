@@ -1,82 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.prodSec{
-    display:flex ;
-    flex-wrap: wrap;
-    padding: 20px;
+.Products {
+  padding: 30px;
 }
 
-.prodBox{
-    width: 340px;
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 50px;
+  color: #000000;
 }
 
-.imgContainer{
-    width: 300px;
-    height: 230px;
-    position: relative; 
-    overflow: hidden; 
-    border-radius: 10px; 
+.divisor {
+  display: flex;
+  justify-self: center;
+  width: 10%;
+  height: 2px;
+  background-color: #7a0000;
+  margin: 20px 0;
 }
 
+.prodSec {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 10px 0 0;
+  justify-content: center;
+}
+
+.prodBox {
+    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.imgContainer {
+  width: 300px;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid gray;
+  transition: all 1s ease;
+}
 
 .imgContainer img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
 img.Hover {
-    opacity: 0;
+  opacity: 0;
 }
 
 .imgContainer:hover img.Hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .imgContainer:hover img.Normal {
-    opacity: 0;
+  opacity: 0;
 }
 
-.titleSec{
-    margin: 50px 10px 10px 10px;
+.titleSec {
+  margin: 50px 10px 10px 10px;
 }
 
-.title{
-    color: gray;
-    font-size: 30px;
-    font-weight: bold;
+.Bttn {
+  display: flex;
+  justify-self: center;
+  bottom: 0;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 20px;
+  background-color: #7a0000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
 }
 
-.bttnBox{
-    margin: 20px;
+.Bttn:hover {
+  background-color: transparent;
+  color: #7a0000;
+  border: 1px solid #7a0000;
+  transition: all 0.7s ease;
 }
 
-.Bttn{
-    display: flex;
-    justify-self: center;
-    bottom: 0;
-    margin: 10px 10px 10px 10px;
-    padding: 10px 20px;
-    background-color: #7a0000;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+
+.prodBox:hover a.Bttn {
+  opacity: 1;
+  transition: all 0.7s ease;
 }
 
-.Bttn:hover{
-    background-color: transparent;
-    color: #7a0000;
-    border: 1px solid #7a0000;
-    transition: all 0.3s ease;
+.prodBox:hover .imgContainer{
+  width: 330px;
+  height: 290px;
+  border: none;
+  transition: all 1s ease;
 }

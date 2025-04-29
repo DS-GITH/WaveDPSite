@@ -20,11 +20,17 @@
 
   </head>
 
-  <body> 
+  <body>
 
-  <div class="Title"> Novidades </div>
+    <ul class="navigate">
+      <li class="inner">Catálogo</li>
+      <li class="inner">Coleções</li>
+      <li class="inner">Contato</li>
+    </ul>
+
+    <div class="Title"> Novidades </div>
     <div class="carrossel-container">
-      
+
       <div class="carrossel">
         <img src="../assets/wavebanner.png" alt="Imagem 1">
         <img src="../assets/wavebanner.png" alt="Imagem 2">
@@ -35,6 +41,27 @@
     </div>
 
     <style>
+      .navigate {
+
+        margin-top: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-weight: bold;
+        font-size: 20px;
+        color: #7a0000;
+      }
+
+      .inner{
+        margin-right: 50px;
+      }
+
+      .inner:last-child {
+        margin-right: 0;
+      }
+
       .carrossel-container {
         position: relative;
         top: 20%;
@@ -43,16 +70,17 @@
         overflow: hidden;
         margin: 0;
       }
-      
-      .Title{
+
+      .Title {
         position: relative;
         font-size: 50px;
         color: black;
         text-align: center;
-        margin: 20% auto 20px auto;
+        margin: 5% auto 30px auto;
         font-family: 'Arial', sans-serif;
         font-weight: bold;
       }
+
       .carrossel {
         display: flex;
         transition: transform 0.5s ease-in-out;
