@@ -23,9 +23,9 @@
   <body>
 
     <ul class="navigate">
-      <li class="inner">Catálogo</li>
-      <li class="inner">Coleções</li>
-      <li class="inner">Contato</li>
+      <li class="inner"><a href="./catalogo.php">Catálogo</a></li>
+      <li class="inner"><a>Coleções</a></li>
+      <li class="inner"><a>Contato</a></li>
     </ul>
 
     <div class="Title"> Novidades </div>
