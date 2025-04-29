@@ -3,9 +3,80 @@
     padding: 0;
 }
 
+.prodSec{
+    display:flex ;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.prodBox{
+    width: 340px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgContainer{
+    width: 300px;
+    height: 230px;
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 10px; 
+}
 
 
-.imgProd{
-    width: 270px;
-    height: 200px;
+.imgContainer img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+img.Hover {
+    opacity: 0;
+}
+
+.imgContainer:hover img.Hover {
+    opacity: 1;
+}
+
+.imgContainer:hover img.Normal {
+    opacity: 0;
+}
+
+.titleSec{
+    margin: 50px 10px 10px 10px;
+}
+
+.title{
+    color: gray;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bttnBox{
+    margin: 20px;
+}
+
+.Bttn{
+    display: flex;
+    justify-self: center;
+    bottom: 0;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 20px;
+    background-color: #7a0000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Bttn:hover{
+    background-color: transparent;
+    color: #7a0000;
+    border: 1px solid #7a0000;
+    transition: all 0.3s ease;
 }
