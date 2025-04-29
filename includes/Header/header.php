@@ -12,7 +12,7 @@
   <body>
     <header>
       <div class="logo">
-        <a href="../index.php">
+        <a href="..\pages\index.php">
           <img src="../assets/Wave.png" alt="Logo Wave">
         </a>
       </div>
