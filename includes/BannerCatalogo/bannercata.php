@@ -62,6 +62,10 @@
         transition: font-size 1s ease;
       }
 
+      ul {
+        margin-bottom: 2%;
+      }
+
       .inner:hover a {
         font-size: 25px;
         transition: font-size 1s ease;

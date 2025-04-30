@@ -20,11 +20,11 @@
             <form method="GET">
                 <h2>Filtros</h2>
 
-                <!-- Filtro de Tamanho -->
-                <label for="tamanho">Tamanho:</label>
-                <label><input type="checkbox" name="tamanho[]" value="P"> P</label>
-                <label><input type="checkbox" name="tamanho[]" value="M"> M</label>
-                <label><input type="checkbox" name="tamanho[]" value="G"> G</label>
+                <!-- Filtro de colecao -->
+                <label for="colecao">Coleção:</label>
+                <label><input type="checkbox" name="colecao[]" value="Primeira"> Primeira</label>
+                <label><input type="checkbox" name="colecao[]" value="Segunda"> Segunda</label>
+                <label><input type="checkbox" name="colecao[]" value="Terceira"> Terceira</label>
                 <br>
 
                 <!-- Filtro de Cor -->
@@ -56,7 +56,15 @@
                 [
                     "nome" => "Blusa Preta P",
                     "preco" => 59.90,
-                    "tamanho" => "P",
+                    "colecao" => "Primeira",
+                    "cor" => "preto",
+                    "imageNormal" => '..\assets\heartcostas.jpeg',
+                    "imageHover" => '..\assets\heartfrente.jpeg'
+                ],
+                [
+                    "nome" => "Blusa Preta P",
+                    "preco" => 59.90,
+                    "colecao" => "Segunda",
                     "cor" => "preto",
                     "imageNormal" => '..\assets\HeartBegeCostas.png',
                     "imageHover" => '..\assets\HeartBegeFrente.png'
@@ -64,7 +72,7 @@
                 [
                     "nome" => "Blusa Preta P",
                     "preco" => 59.90,
-                    "tamanho" => "P",
+                    "colecao" => "Segunda",
                     "cor" => "preto",
                     "imageNormal" => '..\assets\HeartBegeCostas.png',
                     "imageHover" => '..\assets\HeartBegeFrente.png'
@@ -72,7 +80,7 @@
                 [
                     "nome" => "Blusa Preta P",
                     "preco" => 59.90,
-                    "tamanho" => "P",
+                    "colecao" => "Segunda",
                     "cor" => "preto",
                     "imageNormal" => '..\assets\HeartBegeCostas.png',
                     "imageHover" => '..\assets\HeartBegeFrente.png'
@@ -80,7 +88,7 @@
                 [
                     "nome" => "Blusa Preta P",
                     "preco" => 59.90,
-                    "tamanho" => "P",
+                    "colecao" => "Terceira",
                     "cor" => "preto",
                     "imageNormal" => '..\assets\HeartBegeCostas.png',
                     "imageHover" => '..\assets\HeartBegeFrente.png'
@@ -88,7 +96,7 @@
                 [
                     "nome" => "Blusa Preta P",
                     "preco" => 59.90,
-                    "tamanho" => "P",
+                    "colecao" => "Terceira",
                     "cor" => "preto",
                     "imageNormal" => '..\assets\HeartBegeCostas.png',
                     "imageHover" => '..\assets\HeartBegeFrente.png'
@@ -96,15 +104,7 @@
                 [
                     "nome" => "Blusa Preta P",
                     "preco" => 59.90,
-                    "tamanho" => "P",
-                    "cor" => "preto",
-                    "imageNormal" => '..\assets\HeartBegeCostas.png',
-                    "imageHover" => '..\assets\HeartBegeFrente.png'
-                ],
-                [
-                    "nome" => "Blusa Preta P",
-                    "preco" => 59.90,
-                    "tamanho" => "P",
+                    "colecao" => "Terceira",
                     "cor" => "preto",
                     "imageNormal" => '..\assets\HeartBegeCostas.png',
                     "imageHover" => '..\assets\HeartBegeFrente.png'
@@ -113,7 +113,7 @@
                 [
                     "nome" => "Blusa Preta P",
                     "preco" => 59.90,
-                    "tamanho" => "P",
+                    "colecao" => "Primeira",
                     "cor" => "preto",
                     "imageNormal" => '..\assets\HeartBegeCostas.png',
                     "imageHover" => '..\assets\HeartBegeFrente.png'
@@ -121,17 +121,17 @@
                 [
                     "nome" => "Blusa Preta P",
                     "preco" => 59.90,
-                    "tamanho" => "P",
+                    "colecao" => "Primeira",
                     "cor" => "preto",
                     "imageNormal" => '..\assets\HeartBegeCostas.png',
                     "imageHover" => '..\assets\HeartBegeFrente.png'
                 ],
             ];
 
-            // Filtro de Tamanho
-            if (!empty($_GET['tamanho'])) {
+            // Filtro de colecao
+            if (!empty($_GET['colecao'])) {
                 $produtos = array_filter($produtos, function ($p) {
-                    return in_array($p['tamanho'], $_GET['tamanho']);
+                    return in_array($p['colecao'], $_GET['colecao']);
                 });
             }
 
