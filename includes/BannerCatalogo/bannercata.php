@@ -78,7 +78,6 @@
         overflow: hidden;
         margin: 0;
       }
-
       .Title {
         position: relative;
         font-size: 50px;
