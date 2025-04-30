@@ -27,14 +27,12 @@
       <li class="inner"><a href="#">Coleções</a></li>
       <li class="inner"><a href="#">Contato</a></li>
     </ul>
-
-    <div class="Title"> Novidades </div>
     <div class="carrossel-container">
 
       <div class="carrossel">
-        <img src="../assets/wavebanner.png" alt="Imagem 1">
-        <img src="../assets/wavebanner.png" alt="Imagem 2">
-        <img src="../assets/wavebanner.png" alt="Imagem 3">
+        <img src="../assets/Bannercata.png" alt="Imagem 1">
+        <img src="../assets/Bannercata.png" alt="Imagem 2">
+        <img src="../assets/Bannercata.png" alt="Imagem 3">
       </div>
       <span class="carrossel-btn prev">&#10094;</span>
       <span class="carrossel-btn next">&#10095;</span>
@@ -75,9 +73,8 @@
 
       .carrossel-container {
         position: relative;
-        top: 20%;
         width: 100%;
-        height: 400px;
+        height: 700px;
         overflow: hidden;
         margin: 0;
       }

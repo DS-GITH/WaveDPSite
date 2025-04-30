@@ -11,6 +11,8 @@
 
 <?php include_once '../includes/Header/header.php'; ?>
 
+<?php include_once '../includes/BannerCatalogo/bannercata.php'; ?>
+
 <div class="wrapper">
   <main>
     <!-- Seu conteúdo aqui -->
