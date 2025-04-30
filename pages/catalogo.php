@@ -46,7 +46,55 @@
             </form>
         </aside>
 
-        
+        <!-- Listagem de Produtos -->
+        <main class="produtos">
+            <?php
+            // Array de produtos simulados
+            $produtos = [
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+            ];
+
+            // Filtro de Tamanho
+            if (!empty($_GET['tamanho'])) {
+                $produtos = array_filter($produtos, function($p) {
+                    return in_array($p['tamanho'], $_GET['tamanho']);
+                });
+            }
+
+            // Filtro de Cor
+            if (!empty($_GET['cor'])) {
+                $produtos = array_filter($produtos, function($p) {
+                    return in_array($p['cor'], $_GET['cor']);
+                });
+            }
+
+            // Ordenação por Preço
+            if (!empty($_GET['ordem'])) {
+                if ($_GET['ordem'] === 'menor_preco') {
+                    usort($produtos, fn($a, $b) => $a['preco'] <=> $b['preco']);
+                } elseif ($_GET['ordem'] === 'maior_preco') {
+                    usort($produtos, fn($a, $b) => $b['preco'] <=> $a['preco']);
+                }
+            }
+
+            // Exibição dos Produtos
+            if (empty($produtos)) {
+                echo "<p>Nenhum produto encontrado.</p>";
+            } else {
+                foreach ($produtos as $p) {
+                    echo "<div class='produto'>";
+                        echo "<h3>{$p['nome']}</h3>";
+                        echo "<p>Preço: R$ " . number_format($p['preco'], 2, ',', '.') . "</p>";
+                        echo "<p>Tamanho: {$p['tamanho']} | Cor: {$p['cor']}</p>";
+                    echo "</div>";
+                }
+            }
+            ?>
+        </main>
     </div>
 
     <style>
