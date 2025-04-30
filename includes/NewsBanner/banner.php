@@ -43,7 +43,7 @@
     <style>
       .navigate {
 
-        margin-top: 15%;
+        margin-top: 10%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -56,6 +56,17 @@
 
       .inner{
         margin-right: 50px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #7a0000;
+        transition: font-size 1s ease;
+      }
+
+      .inner:hover a {
+        font-size: 25px;
+        transition: font-size 1s ease;
       }
 
       .inner:last-child {
