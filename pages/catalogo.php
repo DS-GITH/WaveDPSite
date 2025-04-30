@@ -56,6 +56,76 @@
                 ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
                 ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
                 ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
+                ["nome" => "Blusa Preta P",   "preco" => 59.90, "tamanho" => "P", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha M", "preco" => 49.90, "tamanho" => "M", "cor" => "vermelho"],
+                ["nome" => "Blusa Branca G",   "preco" => 69.90, "tamanho" => "G", "cor" => "branco"],
+                ["nome" => "Blusa Preta M",    "preco" => 55.00, "tamanho" => "M", "cor" => "preto"],
+                ["nome" => "Blusa Vermelha P", "preco" => 44.00, "tamanho" => "P", "cor" => "vermelho"],
             ];
 
             // Filtro de Tamanho
@@ -108,7 +178,7 @@
 /* Container principal */
 .container {
     display: flex;
-    margin: 20% 0px 0px 0px
+    margin: 5% 0px 20% 0px
 }
 
 /* Sidebar */
@@ -179,9 +249,8 @@ body {
 
 /* Exibição dos produtos */
 .produtos {
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: inline-flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -240,8 +309,10 @@ body {
     }
 }
 
-<?php include_once '../includes/Footer/footer.php'?>
+
 
     </style>
+
+<?php include_once '../includes/Footer/footer.php'?>
 </body>
 </html>
