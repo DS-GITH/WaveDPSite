@@ -24,7 +24,7 @@
 
     <ul class="navigate">
       <li class="inner"><a href="./catalogo.php">Catálogo</a></li>
-      <li class="inner"><a href="#">Coleções</a></li>
+      <li class="inner"><a href="./colecao.php">Coleções</a></li>
       <li class="inner"><a href="#">Contato</a></li>
     </ul>
     <div class="carrossel-container">
