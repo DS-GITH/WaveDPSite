@@ -50,3 +50,29 @@ a{
     text-align: center;
 }
 
+
+.hwindow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    height: 700px;
+}
+
+.hwindow img{
+    width: 90%;
+    height: 70%;
+}
+
+.hname{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about{
+    font-size: 20px;
+    margin-top: 5%;
+}
+

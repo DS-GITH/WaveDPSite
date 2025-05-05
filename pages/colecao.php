@@ -21,35 +21,10 @@ $colections =[
         "nome" => "Primeira",
         "descricao" => "A primeira coleção de blusas.",
         "imagem" => "../assets/wavecolection.png",
+        "textabout" => "Essa é a primeira coleção de blusas, com estampas exclusivas e cores vibrantes. 
+        Cada peça foi cuidadosamente desenhada para oferecer conforto e estilo. Venha conferir!",
     ],
 
-    [
-        "nome" => "Segunda",
-        "descricao" => "A segunda coleção de blusas.",
-        "imagem" => "../assets/wavecolection.png",
-    ],
-    [
-        "nome" => "Primeira",
-        "descricao" => "A primeira coleção de blusas.",
-        "imagem" => "../assets/wavecolection.png",
-    ],
-
-    [
-        "nome" => "Segunda",
-        "descricao" => "A segunda coleção de blusas.",
-        "imagem" => "../assets/wavecolection.png",
-    ],
-    [
-        "nome" => "Primeira",
-        "descricao" => "A primeira coleção de blusas.",
-        "imagem" => "../assets/wavecolection.png",
-    ],
-
-    [
-        "nome" => "Segunda",
-        "descricao" => "A segunda coleção de blusas.",
-        "imagem" => "../assets/wavecolection.png",
-    ],
 ];
 
 
@@ -65,6 +40,14 @@ if (empty($colections)){
         echo "</div>";
         echo "</a>";
     }
+}
+
+foreach ($colections as $colecao){
+    echo "<div class='hwindow'>";
+    echo "<h2 class='hname'>" . $colecao['nome'] . "</h2>";
+    echo "<img src='" . $colecao['imagem'] . "' alt='" . $colecao['nome'] . "'>";
+
+    echo "<p class='about'>" . $colecao['textabout'] . "</p>";
 }
 
 ?>
