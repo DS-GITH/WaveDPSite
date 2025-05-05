@@ -1,78 +1,100 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    color: black;
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 5%;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
 }
 
-.colecao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 600px;
-    height: 600px;
+.colecao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+  transition: transform 0.3s ease;
 }
 
-.colecao:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
+.colecao:hover {
+  transform: scale(1.05);
 }
 
-.colecao img{
-    width: 400px;
-    height: 400px;
+.colecao img {
+  width: 400px;
+  height: 400px;
 }
 
-.name{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.desc{
-    color: rgb(32, 32, 32);
-    font-size: 15px;
-    margin-top: 5px;
-    text-align: center;
+.desc {
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  margin-top: 5px;
 }
 
-
-.hwindow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 700px;
-    height: 700px;
+/* Popup */
+.hwindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+  padding: 20px;
 }
 
-.hwindow img{
-    width: 90%;
-    height: 70%;
+.hwindow img {
+  max-width: 90%;
+  max-height: 50%;
+  border-radius: 10px;
 }
 
-.hname{
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.hname {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-.about{
-    font-size: 20px;
-    margin-top: 5%;
+.about {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  max-width: 80%;
 }
 
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
