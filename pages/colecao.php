@@ -22,13 +22,8 @@ $colections = [
   ],
   [
     "nome" => "Segunda",
-    "imagem" => "../assets/wavecolection.png",
+    "imagem" => "../assets/wavecollection2.png",
     "textabout" => "Essa é a segunda coleção de blusas, com estampas exclusivas e cores vibrantes. Cada peça foi cuidadosamente desenhada para oferecer conforto e estilo. Venha conferir!",
-  ],
-  [
-    "nome" => "Terceira",
-    "imagem" => "../assets/wavecolection.png",
-    "textabout" => "Essa é a terceira coleção de blusas, com estampas exclusivas e cores vibrantes. Cada peça foi cuidadosamente desenhada para oferecer conforto e estilo. Venha conferir!",
   ],
 ];
 
