@@ -4,13 +4,18 @@ margin: 0;
 box-sizing: border-box;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 15%;
-    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
 }
 
 .colecao{
@@ -22,8 +27,26 @@ box-sizing: border-box;
     height: 600px;
 }
 
+.colecao:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 .colecao img{
     width: 400px;
     height: 400px;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.desc{
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
 }
 
