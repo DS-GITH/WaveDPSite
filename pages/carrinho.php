@@ -6,12 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-
+    
 
 <section class="car">
     <div class="container">
         <div class="box-6">
-            <form action="" method="post"
+            <form action="" method="post">
                 <table class="car-table">
                     <thead>
                         <tr>

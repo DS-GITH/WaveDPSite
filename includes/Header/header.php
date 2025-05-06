@@ -123,14 +123,17 @@
       </div>
       <nav class="icons">
         <div class="icon">
-          <i class="fa-solid fa-heart"></i>
+        <a href="#"><i class="fa-solid fa-heart"></i></a>   
         </div>
+
         <div class="icon">
-          <i class="fa-solid fa-cart-plus"></i>
+          <a href="../pages/carrinho.php"><i class="fa-solid fa-cart-plus"></i></a>
         </div>
+
         <div class="icon">
-          <i class="fa-regular fa-circle-user"></i>
+        <a href="../pages/login.php"><i class="fa-regular fa-circle-user"></i></a>
         </div>
+
       </nav>
     </header>
 
