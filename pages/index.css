@@ -1,55 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
 }
 
+body {
+  color: black;
+  line-height: 1.6;
+}
+
+/* Título das seções */
 .title {
   text-align: center;
-  margin: 20px 0;
-  font-size: 50px;
-  color: #000000;
+  margin: 60px 0 20px;
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
+/* Linha decorativa */
 .divisor {
-  display: flex;
-  justify-self: center;
-  width: 10%;
-  height: 2px;
-  background-color: #7a0000;
-  margin: 15px 0;
+  width: 120px;
+  height: 4px;
+  background-color: #ff0000;
+  margin: 0 auto 40px;
+  border-radius: 2px;
 }
 
+/* Grade de produtos */
 .prodSec {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px 10px 0 0;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 0 40px 80px;
 }
 
+/* Card de produto */
 .prodBox {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+.prodBox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(255, 0, 0, 0.2);
+}
+
+/* Imagem do produto */
 .imgContainer {
-  width: 300px;
-  height: 260px;
+  width: 100%;
+  padding-top: 125%; /* Aspect ratio 4:5 */
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  border: 1px solid gray;
-  transition: all 1s ease;
 }
 
 .imgContainer img {
   position: absolute;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
 }
 
 img.Hover {
@@ -64,42 +84,27 @@ img.Hover {
   opacity: 0;
 }
 
-.titleSec {
-  margin: 50px 10px 10px 10px;
+/* Botão de comprar */
+.bttnBox {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
 }
 
 .Bttn {
-  display: flex;
-  justify-self: center;
-  bottom: 0;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 20px;
-  background-color: #7a0000;
-  color: white;
+  display: inline-block;
+  padding: 12px 35px;
+  background-color: #111;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
   transition: all 0.3s ease;
-  opacity: 0;
 }
 
 .Bttn:hover {
-  background-color: transparent;
-  color: #7a0000;
-  border: 1px solid #7a0000;
-  transition: all 0.7s ease;
-}
-
-
-
-.prodBox:hover a.Bttn {
-  opacity: 1;
-  transition: all 0.7s ease;
-}
-
-.prodBox:hover .imgContainer{
-  width: 330px;
-  height: 290px;
-  border: none;
-  transition: all 1s ease;
+  background-color: #ff0000;
+  color: #fff;
 }
