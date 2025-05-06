@@ -1,56 +1,71 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Links */
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
+a:hover {
+  color: #ff0000;
+}
+
+/* Container principal */
 .container {
+  margin-top: 3%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
 }
+
 
 .colecao {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 600px;
-  height: 600px;
+  width: 280px; 
+  height: 400px;
   margin: 15px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
 
 .colecao:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
 }
 
 .colecao img {
-  width: 400px;
-  height: 400px;
+  width: 100%; 
+  height: 280px; 
+  object-fit: cover; 
   border-radius: 10px;
 }
 
 .name {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 10px;
 }
 
 .desc {
-  font-size: 15px;
+  font-size: 14px;
   color: #333;
   text-align: center;
   margin-top: 5px;
+  padding: 0 10px;
 }
 
-/* Popup */
+
 .hwindow {
   position: fixed;
   top: 0;
@@ -65,24 +80,33 @@ a {
   z-index: 9999;
   color: white;
   padding: 20px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .hwindow img {
   max-width: 90%;
-  max-height: 50%;
+  max-height: 60%;
   border-radius: 10px;
 }
 
 .hname {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
 .about {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 20px;
   text-align: center;
   max-width: 80%;
+  padding: 0 20px;
 }
 
 .close {
@@ -94,6 +118,7 @@ a {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .close:hover {

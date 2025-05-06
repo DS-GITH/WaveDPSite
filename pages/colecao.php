@@ -31,17 +31,21 @@ if (empty($colections)) {
   echo "<h2>Nenhuma coleção encontrada.</h2>";
 } else {
   foreach ($colections as $colecao) {
-    echo "<a href='?colecao=" . urlencode($colecao['nome']) . "'>";
+    $colecaoNome = htmlspecialchars($colecao['nome'], ENT_QUOTES, 'UTF-8');
+    $colecaoImagem = htmlspecialchars($colecao['imagem'], ENT_QUOTES, 'UTF-8');
+    $colecaoText = htmlspecialchars($colecao['textabout'], ENT_QUOTES, 'UTF-8');
+    
+    echo "<a href='?colecao=" . urlencode($colecaoNome) . "'>";
     echo "<div class='colecao'>";
-    echo "<img src='" . $colecao['imagem'] . "' alt='" . $colecao['nome'] . "'>";
-    echo "<h3 class='name'>" . $colecao['nome'] . "</h3>";
+    echo "<img src='" . $colecaoImagem . "' alt='" . $colecaoNome . "'>";
+    echo "<h3 class='name'>" . $colecaoNome . "</h3>";
     echo "</div>";
     echo "</a>";
   }
 }
 
 if (isset($_GET['colecao'])) {
-  $colecaoSelecionada = $_GET['colecao'];
+  $colecaoSelecionada = htmlspecialchars($_GET['colecao'], ENT_QUOTES, 'UTF-8');
 
   foreach ($colections as $colecao) {
     if ($colecao['nome'] === $colecaoSelecionada) {
@@ -59,5 +63,6 @@ if (isset($_GET['colecao'])) {
 </div>
 
 <?php include_once '../includes/Footer/footer.php'; ?>
+
 </body>
 </html>
