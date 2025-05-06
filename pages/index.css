@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.Products {
-  padding: 30px;
-}
-
 .title {
   text-align: center;
   margin: 20px 0;
@@ -20,7 +16,7 @@
   width: 10%;
   height: 2px;
   background-color: #7a0000;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .prodSec {

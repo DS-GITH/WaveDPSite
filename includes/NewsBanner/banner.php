@@ -51,7 +51,7 @@
         font-size: 50px;
         color: black;
         text-align: center;
-        margin: 5% auto 30px auto;
+        margin: 2% auto 30px auto;
         font-family: 'Arial', sans-serif;
         font-weight: bold;
       }

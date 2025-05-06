@@ -67,6 +67,11 @@ $currentYear = date("Y");
             border: 1px solid white;
             border-radius: 10px;
             background-color: transparent;
+            color: white;
+        }
+
+        .newsletter input::placeholder {
+            color: white;
         }
 
         .newsletter button {
@@ -74,8 +79,15 @@ $currentYear = date("Y");
             background: white;
             color: black;
             border: none;
+            border-radius: 5px;
             font-weight: bold;
             cursor: pointer;
+        }
+
+        .newsletter button:hover {
+            background: #444;
+            color: white;
+
         }
 
         .social-icons a {
