@@ -37,7 +37,6 @@
       <li class="inner"><a href="./catalogo.php">Catálogo</a></li>
       <li class="inner"><a href="./index.php">Home</a></li>
       <li class="inner"><a href="./colecao.php">Coleções</a></li>
-      <li class="inner"><a href="#">Contato</a></li>
     </ul>
 
     <style>

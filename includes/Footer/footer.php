@@ -3,120 +3,174 @@ $currentYear = date("Y");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Wave</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <title>Footer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            padding: 40px 20px;
+        }
+
+        .footer-top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-bottom: 1px solid #444;
+            padding-bottom: 30px;
+        }
+
+        .footer-col {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .footer-col h4 {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .footer-col ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .newsletter input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background: white;
+            color: black;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+        }
+
+        .whatsapp-btn {
+            display: flex;
+            justify-content: center;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-top {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">Sobre nós</a>
-                <a href="#">Contato</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Serviço</a>
+        <div class="footer-top">
+            <div class="footer-col newsletter">
+                <h4>FAÇA PARTE DO MOVIMENTO</h4>
+                <p>Inscreva-se e tenha acesso exclusivo à vendas antecipadas, promoções e novidades.</p>
+                <input type="email" placeholder="E-mail">
+                <button>Inscrever-se</button>
             </div>
-            <div class="footer-logo">
-                <img src="../assets/wavefooter.png" alt="Wave Logo" />
+
+            <div class="footer-col">
+                <h4>EMPRESA</h4>
+                <ul>
+                    <li><a href="#">Sobre a Wave</a></li>
+                    <li><a href="#">Revenda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>ATENDIMENTO AO CLIENTE</h4>
+                <ul>
+                    <li><a href="#">Dúvidas Frequentes</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Frete e Entrega</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>MINHA CONTA</h4>
+                <ul>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Curtidas</a></li>
+                    <li><a href="#"><em>Carrinho</em></a></li>
+                    <li><a href="#"><em>Programa de Fideldiade</em></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>ENTRE EM CONTATO</h4>
+                <p>Tel: (85) 98404-1796</p>
+                <br>
+                <p></p>E-mail: wavedeepstyle@gmail.com</p>
+                <br>
+                <p></p>Atendimento de Segunda a Sexta das 8h às 18h</p>
+                <a href="https://wa.me/5585984041796/" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
         </div>
+
         <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/wavedeepstyle/?next=%2F"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
             <p>&copy; <?php echo $currentYear; ?> Wave. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <style>
-        footer {
-            background-color: #000000;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            font-family: 'Arial', sans-serif;
-            box-sizing: border-box;
-            box-shadow: -1px -4px 36px -7px rgba(0,0,0,0.57);
-            -webkit-box-shadow: -1px -4px 36px -7px rgba(0,0,0,0.57);
-            -moz-box-shadow: -1px -4px 36px -7px rgba(0,0,0,0.57);
-        }
-
-        .footer-content {
-            display: flex;
-            position: relative;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-            padding: 0 10px;
-        }
-
-        .footer-logo img {
-            width: 250px;
-            height: auto;
-            max-width: 100%;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 500;
-            transition: color 0.3s ease, text-decoration 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-bottom {
-            margin-top: 20px;
-        }
-
-        .footer-bottom p {
-            margin: 0;
-            font-size: 12px;
-        }
-
-        .footer-bottom a {
-            color: white;
-            text-decoration: none;
-            font-size: 12px;
-        }
-
-        .footer-bottom a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footer-links {
-                margin-bottom: 20px;
-            }
-
-            .footer-logo img {
-                width: 200px;
-            }
-
-            .footer-links a {
-                font-size: 18px;
-            }
-        }
-    </style>
-
 </body>
+
 </html>
