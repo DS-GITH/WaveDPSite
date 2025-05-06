@@ -16,26 +16,24 @@
 
     <div class="container">
 
-        <!-- Sidebar de Filtros -->
+
         <aside class="sidebar">
             <form method="GET">
                 <h2>Filtros</h2>
 
-                <!-- Filtro de colecao -->
+   
                 <label for="colecao">Coleção:</label>
                 <label><input type="checkbox" name="colecao[]" value="Primeira"> Primeira</label>
                 <label><input type="checkbox" name="colecao[]" value="Segunda"> Segunda</label>
                 <label><input type="checkbox" name="colecao[]" value="Terceira"> Terceira</label>
                 <br>
 
-                <!-- Filtro de Cor -->
                 <label for="cor">Cor:</label>
                 <label><input type="checkbox" name="cor[]" value="preto"> Preto</label>
                 <label><input type="checkbox" name="cor[]" value="branco"> Branco</label>
                 <label><input type="checkbox" name="cor[]" value="vermelho"> Vermelho</label>
                 <br>
 
-                <!-- Ordenação -->
                 <label for="ordem">Ordenar por:</label>
                 <select name="ordem">
                     <option value="">Padrão</option>
@@ -44,15 +42,14 @@
                 </select>
                 <br>
 
-                <!-- Botão de Submissão -->
+      
                 <button type="submit">Aplicar Filtros</button>
             </form>
         </aside>
 
-        <!-- Listagem de Produtos -->
         <main class="produtos">
             <?php
-            // Array de produtos simulados
+       
             $produtos = [
                 [
                     "nome" => "Blusa Preta P",
@@ -129,21 +126,20 @@
                 ],
             ];
 
-            // Filtro de colecao
+
             if (!empty($_GET['colecao'])) {
                 $produtos = array_filter($produtos, function ($p) {
                     return in_array($p['colecao'], $_GET['colecao']);
                 });
             }
 
-            // Filtro de Cor
             if (!empty($_GET['cor'])) {
                 $produtos = array_filter($produtos, function ($p) {
                     return in_array($p['cor'], $_GET['cor']);
                 });
             }
 
-            // Ordenação por Preço
+      
             if (!empty($_GET['ordem'])) {
                 if ($_GET['ordem'] === 'menor_preco') {
                     usort($produtos, fn($a, $b) => $a['preco'] <=> $b['preco']);
@@ -152,7 +148,7 @@
                 }
             }
 
-            // Exibição dos Produtos
+        
             if (empty($produtos)) {
                 echo "<p>Nenhum produto encontrado.</p>";
             } else {

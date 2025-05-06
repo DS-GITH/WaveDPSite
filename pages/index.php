@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include_once '../data/ColecaoAtual.php';
 include_once '../data/Destaques.php';
@@ -32,23 +32,23 @@ include_once '../data/Recomendadas.php';
 
         <hr class="divisor">
 
-    <div class="prodSec">
+        <div class="prodSec">
 
-    <?php foreach ($ColecaoAtual as $peca): ?>
-        <div class="prodBox">
-            <div class="imgContainer">
-                <img src="<?php echo $peca['hover']; ?>" class="Hover">
-                <img src="<?php echo $peca['normal']; ?>" class="Normal">
-                
-            </div>
-            <div class="bttnBox">
-                <a href="#" class="Bttn">Comprar</a>
-            </div>
-            
+            <?php foreach ($ColecaoAtual as $peca): ?>
+                <div class="prodBox">
+                    <div class="imgContainer">
+                        <img src="<?php echo $peca['hover']; ?>" class="Hover">
+                        <img src="<?php echo $peca['normal']; ?>" class="Normal">
+
+                    </div>
+                    <div class="bttnBox">
+                        <a href="#" class="Bttn">Comprar</a>
+                    </div>
+
+                </div>
+            <?php endforeach; ?>
+
         </div>
-    <?php endforeach; ?>
-
-</div>
 
     </section>
 
@@ -58,23 +58,23 @@ include_once '../data/Recomendadas.php';
 
         <hr class="divisor">
 
-    <div class="prodSec">
+        <div class="prodSec">
 
-    <?php foreach ($Destaques as $destacada): ?>
-        <div class="prodBox">
-            <div class="imgContainer">
-                <img src="<?php echo $destacada['hover']; ?>" class="Hover">
-                <img src="<?php echo $destacada['normal']; ?>" class="Normal">
-                
-            </div>
-            <div class="bttnBox">
-                <a href="#" class="Bttn">Comprar</a>
-            </div>
-            
+            <?php foreach ($Destaques as $destacada): ?>
+                <div class="prodBox">
+                    <div class="imgContainer">
+                        <img src="<?php echo $destacada['hover']; ?>" class="Hover">
+                        <img src="<?php echo $destacada['normal']; ?>" class="Normal">
+
+                    </div>
+                    <div class="bttnBox">
+                        <a href="#" class="Bttn">Comprar</a>
+                    </div>
+
+                </div>
+            <?php endforeach; ?>
+
         </div>
-    <?php endforeach; ?>
-
-</div>
 
     </section>
 
@@ -84,23 +84,23 @@ include_once '../data/Recomendadas.php';
 
         <hr class="divisor">
 
-    <div class="prodSec">
+        <div class="prodSec">
 
-    <?php foreach ($Recomendadas as $recomendacao): ?>
-        <div class="prodBox">
-            <div class="imgContainer">
-                <img src="<?php echo $recomendacao['hover']; ?>" class="Hover">
-                <img src="<?php echo $recomendacao['normal']; ?>" class="Normal">
-                
-            </div>
-            <div class="bttnBox">
-                <a href="#" class="Bttn">Comprar</a>
-            </div>
-            
+            <?php foreach ($Recomendadas as $recomendacao): ?>
+                <div class="prodBox">
+                    <div class="imgContainer">
+                        <img src="<?php echo $recomendacao['hover']; ?>" class="Hover">
+                        <img src="<?php echo $recomendacao['normal']; ?>" class="Normal">
+
+                    </div>
+                    <div class="bttnBox">
+                        <a href="#" class="Bttn">Comprar</a>
+                    </div>
+
+                </div>
+            <?php endforeach; ?>
+
         </div>
-    <?php endforeach; ?>
-
-</div>
 
     </section>
 

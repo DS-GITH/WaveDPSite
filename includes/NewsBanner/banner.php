@@ -91,35 +91,35 @@
     </style>
 
     <script>
-      // Configuração do carrossel
+
       const carrossel = document.querySelector('.carrossel');
       const prevButton = document.querySelector('.prev');
       const nextButton = document.querySelector('.next');
       const totalSlides = carrossel.children.length;
       let currentIndex = 0;
 
-      // Função para mostrar a imagem correta
+
       function showSlide(index) {
-        const offset = -index * 100; // Desloca para a imagem correta
+        const offset = -index * 100; 
         carrossel.style.transform = `translateX(${offset}%)`;
       }
 
-      // Função para mover para a próxima imagem
+    
       function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides; // A lógica do loop
+        currentIndex = (currentIndex + 1) % totalSlides; 
         showSlide(currentIndex);
       }
 
-      // Função para mover para a imagem anterior
+  
       function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // A lógica do loop
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
         showSlide(currentIndex);
       }
 
-      // Configuração do loop automático (opcional)
-      setInterval(nextSlide, 5000); // Muda a imagem a cada 5 segundos
+  
+      setInterval(nextSlide, 5000); 
 
-      // Eventos de clique para os botões
+   
       prevButton.addEventListener('click', prevSlide);
       nextButton.addEventListener('click', nextSlide);
     </script>

@@ -33,9 +33,9 @@
       </nav>
     </header>
 
-    <!-- NAVIGATE FORA DO HEADER -->
     <ul class="navigate">
       <li class="inner"><a href="./catalogo.php">Catálogo</a></li>
+      <li class="inner"><a href="./index.php">Home</a></li>
       <li class="inner"><a href="./colecao.php">Coleções</a></li>
       <li class="inner"><a href="#">Contato</a></li>
     </ul>
@@ -62,7 +62,7 @@
       }
 
       .navigate {
-        margin-top: 10%; /* espaço abaixo do header fixo */
+        margin-top: 10%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -72,7 +72,7 @@
         padding: 10px 0;
         font-weight: bold;
         font-size: 20px;
-        position: relative; /* garante que não seja fixo */
+        position: relative; 
         z-index: 0;
       }
 

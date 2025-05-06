@@ -27,7 +27,6 @@ $colections = [
   ],
 ];
 
-// Exibe as coleções normalmente com links
 if (empty($colections)) {
   echo "<h2>Nenhuma coleção encontrada.</h2>";
 } else {
@@ -41,7 +40,6 @@ if (empty($colections)) {
   }
 }
 
-// Exibe a janela somente se for clicada
 if (isset($_GET['colecao'])) {
   $colecaoSelecionada = $_GET['colecao'];
 
