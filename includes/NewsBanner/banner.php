@@ -22,12 +22,6 @@
 
   <body>
 
-    <ul class="navigate">
-      <li class="inner"><a href="./catalogo.php">Catálogo</a></li>
-      <li class="inner"><a href="#">Coleções</a></li>
-      <li class="inner"><a href="#">Contato</a></li>
-    </ul>
-
     <div class="Title"> Novidades </div>
     <div class="carrossel-container">
 
@@ -41,37 +35,7 @@
     </div>
 
     <style>
-      .navigate {
-
-        margin-top: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        font-weight: bold;
-        font-size: 20px;
-        color: #7a0000;
-      }
-
-      .inner{
-        margin-right: 50px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #7a0000;
-        transition: font-size 1s ease;
-      }
-
-      .inner:hover a {
-        font-size: 25px;
-        transition: font-size 1s ease;
-      }
-
-      .inner:last-child {
-        margin-right: 0;
-      }
+      
 
       .carrossel-container {
         position: relative;

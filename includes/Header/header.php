@@ -33,6 +33,13 @@
       </nav>
     </header>
 
+    <!-- NAVIGATE FORA DO HEADER -->
+    <ul class="navigate">
+      <li class="inner"><a href="./catalogo.php">Catálogo</a></li>
+      <li class="inner"><a href="./colecao.php">Coleções</a></li>
+      <li class="inner"><a href="#">Contato</a></li>
+    </ul>
+
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -52,8 +59,39 @@
         align-items: center;
         justify-content: space-around;
         box-shadow: 0px -4px 35px 0px rgba(0, 0, 0, 1);
-        -webkit-box-shadow: 0px -4px 35px 0px rgba(0, 0, 0, 1);
-        -moz-box-shadow: 0px -4px 35px 0px rgba(0, 0, 0, 1);
+      }
+
+      .navigate {
+        margin-top: 10%; /* espaço abaixo do header fixo */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 20px;
+        position: relative; /* garante que não seja fixo */
+        z-index: 0;
+      }
+
+      .inner {
+        margin-right: 50px;
+      }
+
+      .inner:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #7a0000;
+        transition: font-size 0.3s ease;
+      }
+
+      .inner:hover a {
+        font-size: 25px;
       }
 
       .logo img {
@@ -64,7 +102,6 @@
 
       .logo img:hover {
         transform: scale(1.55);
-        transition: transform 0.3s ease;
       }
 
       .search-bar {
@@ -93,7 +130,6 @@
         font-size: 20px;
         color: #666;
         cursor: pointer;
-        transition: color 0.3s ease;
       }
 
       .search-icon:hover {
