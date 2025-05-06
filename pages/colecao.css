@@ -10,11 +10,9 @@ a {
 }
 
 .container {
-  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .colecao {
@@ -23,7 +21,7 @@ a {
   align-items: center;
   width: 600px;
   height: 600px;
-  margin: 20px;
+  margin: 15px;
   transition: transform 0.3s ease;
 }
 
