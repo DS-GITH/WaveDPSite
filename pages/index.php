@@ -1,12 +1,17 @@
 <?php
-include_once '../data/ColecaoAtual.php';
-include_once '../data/Destaques.php';
-include_once '../data/Recomendadas.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use App\Data\ColecaoAtual;
+use App\Data\Destaques;
+use App\Data\Recomendadas;
+
+$colecao = ColecaoAtual::get();
+$destaques = Destaques::get();
+$recomendadas = Recomendadas::get();
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,21 +19,21 @@ include_once '../data/Recomendadas.php';
     <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <?php include_once '../includes/Header/header.php'; ?>
     <?php include_once '../includes/NewsBanner/banner.php'; ?>
 
+    <!-- Coleção Atual -->
     <section class="Products">
         <h2 class="title">Coleção Atual</h2>
         <hr class="divisor">
         <div class="prodSec">
-            <?php foreach ($ColecaoAtual as $peca): ?>
+            <?php foreach ($colecao as $peca): ?>
                 <div class="prodBox">
                     <div class="imgContainer">
-                        <img src="<?php echo $peca['hover']; ?>" class="Hover">
-                        <img src="<?php echo $peca['normal']; ?>" class="Normal">
+                        <img src="<?= $peca['hover'] ?>" class="Hover" alt="Produto Hover">
+                        <img src="<?= $peca['normal'] ?>" class="Normal" alt="Produto">
                     </div>
                     <div class="bttnBox">
                         <a href="#" class="Bttn">Comprar</a>
@@ -38,15 +43,16 @@ include_once '../data/Recomendadas.php';
         </div>
     </section>
 
+    <!-- Destaques -->
     <section class="Products">
         <h2 class="title">Destaques</h2>
         <hr class="divisor">
         <div class="prodSec">
-            <?php foreach ($Destaques as $destacada): ?>
+            <?php foreach ($destaques as $item): ?>
                 <div class="prodBox">
                     <div class="imgContainer">
-                        <img src="<?php echo $destacada['hover']; ?>" class="Hover">
-                        <img src="<?php echo $destacada['normal']; ?>" class="Normal">
+                        <img src="<?= $item['hover'] ?>" class="Hover" alt="Produto Hover">
+                        <img src="<?= $item['normal'] ?>" class="Normal" alt="Produto">
                     </div>
                     <div class="bttnBox">
                         <a href="#" class="Bttn">Comprar</a>
@@ -56,15 +62,16 @@ include_once '../data/Recomendadas.php';
         </div>
     </section>
 
+    <!-- Recomendadas -->
     <section class="Products">
-        <h2 class="title">Recomendados</h2>
+        <h2 class="title">Recomendadas</h2>
         <hr class="divisor">
         <div class="prodSec">
-            <?php foreach ($Recomendadas as $recomendacao): ?>
+            <?php foreach ($recomendadas as $item): ?>
                 <div class="prodBox">
                     <div class="imgContainer">
-                        <img src="<?php echo $recomendacao['hover']; ?>" class="Hover">
-                        <img src="<?php echo $recomendacao['normal']; ?>" class="Normal">
+                        <img src="<?= $item['hover'] ?>" class="Hover" alt="Produto Hover">
+                        <img src="<?= $item['normal'] ?>" class="Normal" alt="Produto">
                     </div>
                     <div class="bttnBox">
                         <a href="#" class="Bttn">Comprar</a>

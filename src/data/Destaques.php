@@ -1,6 +1,11 @@
 <?php
 
-$Destaques = [
+namespace App\data;
+
+class Destaques{
+    public static function get(): array{
+
+        return [
     [
         'normal' => '../assets/HeartBegeCostas.png',   
         'hover' => '../assets/HeartBegeFrente.png',    
@@ -38,5 +43,6 @@ $Destaques = [
 
 
 ];
+    }}
 
 ?>

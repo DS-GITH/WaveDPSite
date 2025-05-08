@@ -1,6 +1,11 @@
 <?php
 
-$ColecaoAtual = [
+namespace App\data;
+
+class Recomendadas{
+    public static function get(): array{
+
+        return [
     [
         'normal' => '../assets/HeartBegeCostas.png',   
         'hover' => '../assets/HeartBegeFrente.png',    
@@ -38,5 +43,7 @@ $ColecaoAtual = [
 
 
 ];
+
+    }}
 
 ?>
