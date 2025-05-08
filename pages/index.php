@@ -12,6 +12,7 @@ $recomendadas = Recomendadas::get();
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,7 @@ $recomendadas = Recomendadas::get();
     <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <?php include_once '../includes/Header/header.php'; ?>
@@ -84,4 +86,5 @@ $recomendadas = Recomendadas::get();
     <?php include_once '../includes/Footer/footer.php'; ?>
 
 </body>
+
 </html>
