@@ -115,7 +115,7 @@
   <header>
     <div class="logo">
       <a href="../pages/index.php">
-        <img src="../assets/Wave.png" alt="Logo Wave" />
+        <img src="../assets/Bannercata.png" alt="Logo Wave" />
       </a>
     </div>
     <div class="search-bar">
