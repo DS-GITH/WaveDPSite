@@ -128,6 +128,10 @@
       </div>
 
       <div class="icon">
+        <a href="#"><i class="fa-solid fa-heart"></i></a>
+      </div>
+
+      <div class="icon">
         <a href="../pages/carrinho.php"><i class="fa-solid fa-cart-plus"></i></a>
       </div>
 
